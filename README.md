@@ -58,6 +58,22 @@ Then init prisma
 bunx prisma init
 ```
 
+Setup command CLI
+
+```json
+"prisma:migrate": "bunx prisma migrate dev",
+"prisma:migrate:reset": "bunx prisma migrate reset",
+"prisma:studio": "bunx prisma studio"
+```
+
+## ⛳️ tRPC Setup
+
+Installing this package
+
+```bash
+bun add @trpc/server @trpc/client @trpc/tanstack-react-query @tanstack/react-query client-only server-only
+```
+
 ## 🧠 Form Handling & Validation
 
 Use react-hook-form for form state management.
