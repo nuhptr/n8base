@@ -31,16 +31,31 @@ git clone https://github.com/nuhptr/n8base.git
 cd n8base
 ```
 
-## Install Dependencies
+### Install Dependencies
 
 ```bash
 bash bun install
 ```
 
-## Add all shadcn components
+### Add all shadcn components
 
 ```bash
 bunx shadcn@latest add --all
+```
+
+## ⛳️ Prisma
+
+Install dependencies
+
+```bash
+bun install prisma tsx --save-dev
+bun install @prisma/client
+```
+
+Then init prisma
+
+```bash
+bunx prisma init
 ```
 
 ## 🧠 Form Handling & Validation
