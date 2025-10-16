@@ -74,6 +74,20 @@ Installing this package
 bun add @trpc/server @trpc/client @trpc/tanstack-react-query @tanstack/react-query client-only server-only
 ```
 
+## ⛳️ Better Auth
+
+Follow installing instruction from official website
+
+```bash
+bun add better-auth
+```
+
+Create database table
+
+```bash
+bunx @better-auth/cli generate
+```
+
 ## 🧠 Form Handling & Validation
 
 Use react-hook-form for form state management.
