@@ -34,6 +34,15 @@ const buttonVariants = cva(
     }
 )
 
+/**
+ * Render a styled button element or render its child as the button using a Radix Slot.
+ *
+ * Renders a button (or the provided child via `Slot` when `asChild` is true) with classes derived from `buttonVariants`
+ * merged with any provided `className`, and forwards all other props to the rendered element.
+ *
+ * @param asChild - When true, render the provided child inside a Radix `Slot` instead of a native `button`.
+ * @returns A React element representing the styled button or the slot-wrapped child.
+ */
 function Button({
     className,
     variant,

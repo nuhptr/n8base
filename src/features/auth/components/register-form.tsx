@@ -34,6 +34,15 @@ const registerSchema = z
     })
 type RegisterFormValues = z.infer<typeof registerSchema>
 
+/**
+ * Renders the sign-up form UI, validates input, and performs email-based registration.
+ *
+ * The component displays social auth buttons, email, password, and confirm-password fields with schema validation,
+ * submits validated credentials to the authentication client, shows success or error toasts, and navigates to the
+ * home page on successful account creation.
+ *
+ * @returns The registration form React element.
+ */
 export function RegisterForm() {
     const router = useRouter()
 
