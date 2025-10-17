@@ -28,6 +28,13 @@ const loginSchema = z.object({
 })
 type LoginFormValues = z.infer<typeof loginSchema>
 
+/**
+ * Render a login card with email and password inputs, social sign-in buttons, client-side validation, and submission handling.
+ *
+ * The form validates input using the configured Zod schema, attempts sign-in via the auth client on submit, shows success or error toasts, and navigates to the root path on successful login.
+ *
+ * @returns The login form UI as a JSX element
+ */
 export function LoginForm() {
     const router = useRouter()
 
@@ -78,6 +85,12 @@ export function LoginForm() {
                                         type="button"
                                         disabled={isPending}
                                     >
+                                        <Image
+                                            src={"/logos/github.svg"}
+                                            alt="github"
+                                            width={20}
+                                            height={20}
+                                        />
                                         Continue with Github
                                     </Button>
                                     <Button
@@ -86,6 +99,12 @@ export function LoginForm() {
                                         type="button"
                                         disabled={isPending}
                                     >
+                                        <Image
+                                            src={"/logos/google.svg"}
+                                            alt="google"
+                                            width={20}
+                                            height={20}
+                                        />
                                         Continue with Google
                                     </Button>
                                 </div>

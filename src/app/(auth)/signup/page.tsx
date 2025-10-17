@@ -5,11 +5,7 @@ import { RegisterForm } from "@/features/auth/components/register-form"
 const SignUpPage = async () => {
     await requireUnauth() // Redirect if the user is authenticated
 
-    return (
-        <div>
-            <RegisterForm />
-        </div>
-    )
+    return <RegisterForm />
 }
 
 export default SignUpPage
